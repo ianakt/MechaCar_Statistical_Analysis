@@ -21,32 +21,35 @@ total_summary <- S_Coil %>%
 total_summary
 
 
-
-# Experimental Below
-
-PSI_Subset <- subset(S_Coil, select = PSI)
-
-# Type Error when using t-test
-
-Lot_1 <- subset(S_Coil, Manufacturing_Lot == "Lot1" ,select = PSI)
-Lot_2 <- subset(S_Coil, Manufacturing_Lot == "Lot2" ,select = PSI)
-Lot_3 <- subset(S_Coil, Manufacturing_Lot == "Lot3" ,select = PSI)
-
-#These t-test show output, though ave different results
+t.test(Lot11$PSI, Lot22$PSI, Lot33$Psi,  paired = TRUE)
 
 
-PSI_All <- t.test(formula = PSI~1,data = S_Coil)
-PSI_All
 
-PSI_All2 <- t.test(formula = PSI~1,data = S_Coil, mu = 1498.78)
-PSI_All2
+# # Experimental Below
 
-Lot11 <- S_Coil %>% filter(Manufacturing_Lot == "Lot1")
-Lot22 <- S_Coil %>% filter(Manufacturing_Lot == "Lot2")
-Lot33 <- S_Coil %>% filter(Manufacturing_Lot == "Lot3")
+# PSI_Subset <- subset(S_Coil, select = PSI)
 
-# This didn't work, modelled from mod 15.6.3 15.6.4
+# # Type Error when using t-test
 
-t.test(formula = Lot11~PSI,data = S_Coil)
-t.test(formula = Lot11~1,data = S_Coil)
+# Lot_1 <- subset(S_Coil, Manufacturing_Lot == "Lot1" ,select = PSI)
+# Lot_2 <- subset(S_Coil, Manufacturing_Lot == "Lot2" ,select = PSI)
+# Lot_3 <- subset(S_Coil, Manufacturing_Lot == "Lot3" ,select = PSI)
+
+# #These t-test show output, though ave different results
+
+
+# PSI_All <- t.test(formula = PSI~1,data = S_Coil)
+# PSI_All
+
+# PSI_All2 <- t.test(formula = PSI~1,data = S_Coil, mu = 1498.78)
+# PSI_All2
+
+# Lot11 <- S_Coil %>% filter(Manufacturing_Lot == "Lot1")
+# Lot22 <- S_Coil %>% filter(Manufacturing_Lot == "Lot2")
+# Lot33 <- S_Coil %>% filter(Manufacturing_Lot == "Lot3")
+
+# # This didn't work, modelled from mod 15.6.3 15.6.4
+
+# t.test(formula = Lot11~PSI,data = S_Coil)
+# t.test(formula = Lot11~1,data = S_Coil)
 
