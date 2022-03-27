@@ -31,6 +31,16 @@ Lot_3 <- subset(S_Coil, Manufacturing_Lot == "Lot3" ,select = PSI)
 
 t.test(Lot11$PSI, Lot22$PSI, Lot33$Psi,  paired = TRUE)
 
+lot_summary <- S_Coil %>% 
+  group_by(Manufacturing_Lot) %>%
+  summarize(Mean=mean(PSI)
+            ,Median=median(PSI)
+            ,Variance=var(PSI),
+            SD=sd(PSI))
+
+lot_summary
+
+
 
 
 # # Experimental Below
