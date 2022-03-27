@@ -20,6 +20,14 @@ total_summary <- S_Coil %>%
 
 total_summary
 
+Lot11 <- S_Coil %>% filter(Manufacturing_Lot == "Lot1")
+Lot22 <- S_Coil %>% filter(Manufacturing_Lot == "Lot2")
+Lot33 <- S_Coil %>% filter(Manufacturing_Lot == "Lot3")
+
+Lot_1 <- subset(S_Coil, Manufacturing_Lot == "Lot1" ,select = PSI)
+Lot_2 <- subset(S_Coil, Manufacturing_Lot == "Lot2" ,select = PSI)
+Lot_3 <- subset(S_Coil, Manufacturing_Lot == "Lot3" ,select = PSI)
+
 
 t.test(Lot11$PSI, Lot22$PSI, Lot33$Psi,  paired = TRUE)
 
@@ -31,9 +39,7 @@ t.test(Lot11$PSI, Lot22$PSI, Lot33$Psi,  paired = TRUE)
 
 # # Type Error when using t-test
 
-# Lot_1 <- subset(S_Coil, Manufacturing_Lot == "Lot1" ,select = PSI)
-# Lot_2 <- subset(S_Coil, Manufacturing_Lot == "Lot2" ,select = PSI)
-# Lot_3 <- subset(S_Coil, Manufacturing_Lot == "Lot3" ,select = PSI)
+
 
 # #These t-test show output, though ave different results
 
@@ -44,9 +50,7 @@ t.test(Lot11$PSI, Lot22$PSI, Lot33$Psi,  paired = TRUE)
 # PSI_All2 <- t.test(formula = PSI~1,data = S_Coil, mu = 1498.78)
 # PSI_All2
 
-# Lot11 <- S_Coil %>% filter(Manufacturing_Lot == "Lot1")
-# Lot22 <- S_Coil %>% filter(Manufacturing_Lot == "Lot2")
-# Lot33 <- S_Coil %>% filter(Manufacturing_Lot == "Lot3")
+
 
 # # This didn't work, modelled from mod 15.6.3 15.6.4
 
