@@ -20,9 +20,9 @@ total_summary <- S_Coil %>%
 
 total_summary
 
-Lot11 <- S_Coil %>% filter(Manufacturing_Lot == "Lot1")
-Lot22 <- S_Coil %>% filter(Manufacturing_Lot == "Lot2")
-Lot33 <- S_Coil %>% filter(Manufacturing_Lot == "Lot3")
+Lot11 <- S_Coil %>% filter(Manufacturing_Lot == "Lot1") # = Lot 1
+Lot22 <- S_Coil %>% filter(Manufacturing_Lot == "Lot2") # = Lot 2
+Lot33 <- S_Coil %>% filter(Manufacturing_Lot == "Lot3") # = Lot 3
 
 Lot_1 <- subset(S_Coil, Manufacturing_Lot == "Lot1" ,select = PSI)
 Lot_2 <- subset(S_Coil, Manufacturing_Lot == "Lot2" ,select = PSI)
