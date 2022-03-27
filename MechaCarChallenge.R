@@ -14,3 +14,8 @@ Linear_Model_MPG<-lm(formula = mpg~vehicle_length
 Lin_Mod_Mpg_Summary = summary(Linear_Model_MPG)
 Lin_Mod_Mpg_Summary
 
+
+total_summary <- S_Coil %>% 
+  summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI))
+
+total_summary
