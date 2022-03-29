@@ -16,7 +16,7 @@
 ![image](https://user-images.githubusercontent.com/68198233/160719574-fa9e287c-e226-4ffa-a979-6c268d1d5581.png)
 
 
-![image](https://user-images.githubusercontent.com/68198233/160719071-e6b35bd4-d87e-48ff-9b6e-8c67baa24ed2.png)
+![image](https://user-images.githubusercontent.com/68198233/160722244-ea94a9be-fa4c-40db-9620-38f7aa39a575.png)
 
 
 ##  Summary Statistics on Suspension Coils
@@ -35,3 +35,5 @@
 
 
 ## Study Design: MechaCar vs Competition
+
+  As a subject of analysis I would compare MechaCar's variance in prices for each car type (vehicle size) against the competition using the chi square tests accross dealerships.
