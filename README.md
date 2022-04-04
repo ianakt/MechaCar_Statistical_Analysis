@@ -29,11 +29,27 @@
 
 ## T-Tests on Suspension Coils
   
-  As you might expect the significant differences between the means were Lot 1 verses Lot 3 (Lot1v3) mean of differences (mean of differences = 3.86)  and Lot 2 verses lot 3 (Lot2v3) (mean of differences = 4.06), with the least differences between Lot 1 and Lot 2 (mean of differences = 0.2)
-  
+  The t test indicate that lots 1 and 2 are closest to the mean, with lot 3 being the furthest.
   
 
 
 ## Study Design: MechaCar vs Competition
 
-  As a subject of analysis I would compare MechaCar's variance in prices for each car type (vehicle size) against the competition using the chi square tests accross dealerships.
+  To look at consumer interest across vehicle manufacturers, I would analyze the revenue produced by each manufacturer by vehicle type. 
+  
+  Hypotehsis: Certain vehicle types drive sales
+  
+  Alternative: Hypothesis: Vehicle types don't drive sales
+  
+  ### How to measure? 
+    - number of vehicles sold for each type
+    - Revenue gained by vehicle type
+    
+ ### How to analyze?
+    t test, 
+      1) For each manufacturer see the difference in means of:
+        - sales per vehicle type
+        - sales overall by company
+        
+        Linear Model
+       2) Check proportion of vehhicle type sold per company, and see if it is a predictor of sales.
