@@ -65,7 +65,7 @@ The t tests are rather odd, it indicates:
 
   To look at consumer interest across vehicle manufacturers, I would analyze the revenue produced by each manufacturer by vehicle type. 
   
-  Hypotehsis: Certain vehicle types drive sales
+  Hypothesis: Certain vehicle types drive sales
   
   Alternative: Hypothesis: Vehicle types don't drive sales
   
