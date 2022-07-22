@@ -6,10 +6,14 @@
   
   We looked at 5 factors that may effect the mpg which were Spoiler Angle, vehicle weight, length, ground clearance, and all wheel drive. Based off of our linear model I listed the factors in order of positive correlation 1 being the the most important and 5 the least important
    1. Spoiler Angle
+   ![image](https://user-images.githubusercontent.com/68198233/180487597-1776dbdc-0e66-4831-9196-196ed47e2e37.png)
+
    2. All Wheel Drive
    3. Vehicle Weight
    4. vehicle length
    5. ground clearance
+   ![image](https://user-images.githubusercontent.com/68198233/180487859-9b6eabcf-cb56-4d2e-99d1-42bda539cb38.png)
+
 
   The slope of our R^2 is positive
 
